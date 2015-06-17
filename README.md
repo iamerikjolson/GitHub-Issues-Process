@@ -36,10 +36,9 @@ Issues flow through the following states during their lifecycle:
 1. **Backlog** issues have been identified but are not yet ready for development.
 2. ![Ready Label](https://github.com/80-20/ProcessManagement/blob/master/Labels/Ready.png) issues have been fleshed out to the point where it is believed they are ready to be acted upon by developers working on the associated milestone.
 3. ![In Development Label](https://github.com/80-20/ProcessManagement/blob/master/Labels/InDevelopment.png) issues are actively being worked on by a developer.  With the exception of items that are blocked or returned to development due to failed tests, each developer should strive to have as few items in this state as possible. 
-4. ![Ready for Testing Label](https://github.com/80-20/ProcessManagement/blob/master/Labels/ReadyForTesting.png) issues are code complete and can be acted on by testers.  All code is assumed to be checked in and deployed to the appropriate environments for testing.
-5. ![In Testing Label](https://github.com/80-20/ProcessManagement/blob/master/Labels/InTesting.png) issues are actively being tested.
-6. ![Integration Testing Label](https://github.com/80-20/ProcessManagement/blob/master/Labels/IntegrationTesting.png) issues have been unit tested and are ready for closure pending end of sprint integration testing.
-7. **Done** issues have passed testing and are closed.
+4. ![Feature Testing Label](https://github.com/80-20/ProcessManagement/blob/master/Labels/FeatureTesting.png) issues are code complete and can be acted on by testers.  All code is assumed to be checked in and deployed to the appropriate environments for testing.
+5. ![Integration Testing Label](https://github.com/80-20/ProcessManagement/blob/master/Labels/IntegrationTesting.png) issues have been unit tested and are ready for closure pending end of sprint integration testing.
+6. **Done** issues have passed testing and are closed.
 
 All states are controlled via GitHub labels mapped to the appropriate state. By default, state transitions are managed simply by removing the current state label and applying the appropriate next state label.  Waffle.io may be used to do this automatically via drag-drop. The following label mappings are in use:
 
@@ -76,8 +75,7 @@ Configuration of GitHub Issues requires only two steps:
 The following can be used for configuring the label names and colors:
 * ![Ready Label](https://github.com/80-20/ProcessManagement/blob/master/Labels/Ready.png) [Ready, #fbca04]
 * ![In Development Label](https://github.com/80-20/ProcessManagement/blob/master/Labels/InDevelopment.png) [In Development, #fbca04]
-* ![Ready For Testing Label](https://github.com/80-20/ProcessManagement/blob/master/Labels/ReadyForTesting.png) [Ready for Testing, #009800]
-* ![In Testing Label](https://github.com/80-20/ProcessManagement/blob/master/Labels/InTesting.png) [In Testing, #009800]
+* ![Feature Testing Label](https://github.com/80-20/ProcessManagement/blob/master/Labels/FeatureTesting.png) [Feature Testing, #009800]
 * ![Integration Testing Label](https://github.com/80-20/ProcessManagement/blob/master/Labels/IntegrationTesting.png) [Integration Testing, #009800]
 * ![Blocked Label](https://github.com/80-20/ProcessManagement/blob/master/Labels/blocked.png) [blocked, #e11d21]
 * ![Bug Label](https://github.com/80-20/ProcessManagement/blob/master/Labels/bug.png) [bug, #eb6420]
