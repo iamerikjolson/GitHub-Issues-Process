@@ -28,17 +28,17 @@ Issues that arise while a release is in development should typically only be hot
 
 For example, a small issue that only affects staff and has a known work-around does not necessarily need to be hot-fixed even if it is a quick fix, as it is not actively limiting the company's ability to do business.  As such, it falls into the default process and should be incorporated into the current or future release, depending on the priority of the item.
 
-![Operational Issue Intake Process](https://github.com/travisstokes/ProcessManagement/blob/master/Operational%20Issue%20Intake%20Process.png)
+![Operational Issue Intake Process](https://github.com/80-20/ProcessManagement/blob/master/Operational%20Issue%20Intake%20Process.png)
 
 # Task Management
 Issues flow through the following states during their lifecycle:
 
 1. **Backlog** issues have been identified but are not yet ready for development.
-2. ![Ready Label](https://github.com/travisstokes/ProcessManagement/blob/master/Labels/Ready.png) issues have been fleshed out to the point where it is believed they are ready to be acted upon by developers working on the associated milestone.
-3. ![In Development Label](https://github.com/travisstokes/ProcessManagement/blob/master/Labels/InDevelopment.png) issues are actively being worked on by a developer.  With the exception of items that are blocked or returned to development due to failed tests, each developer should strive to have as few items in this state as possible. 
-4. ![Ready for Testing Label](https://github.com/travisstokes/ProcessManagement/blob/master/Labels/ReadyForTesting.png) issues are code complete and can be acted on by testers.  All code is assumed to be checked in and deployed to the appropriate environments for testing.
-5. ![In Testing Label](https://github.com/travisstokes/ProcessManagement/blob/master/Labels/InTesting.png) issues are actively being tested.
-6. ![Integration Testing Label](https://github.com/travisstokes/ProcessManagement/blob/master/Labels/IntegrationTesting.png) issues have been unit tested and are ready for closure pending end of sprint integration testing.
+2. ![Ready Label](https://github.com/80-20/ProcessManagement/blob/master/Labels/Ready.png) issues have been fleshed out to the point where it is believed they are ready to be acted upon by developers working on the associated milestone.
+3. ![In Development Label](https://github.com/80-20/ProcessManagement/blob/master/Labels/InDevelopment.png) issues are actively being worked on by a developer.  With the exception of items that are blocked or returned to development due to failed tests, each developer should strive to have as few items in this state as possible. 
+4. ![Ready for Testing Label](https://github.com/80-20/ProcessManagement/blob/master/Labels/ReadyForTesting.png) issues are code complete and can be acted on by testers.  All code is assumed to be checked in and deployed to the appropriate environments for testing.
+5. ![In Testing Label](https://github.com/80-20/ProcessManagement/blob/master/Labels/InTesting.png) issues are actively being tested.
+6. ![Integration Testing Label](https://github.com/80-20/ProcessManagement/blob/master/Labels/IntegrationTesting.png) issues have been unit tested and are ready for closure pending end of sprint integration testing.
 7. **Done** issues have passed testing and are closed.
 
 All states are controlled via GitHub labels mapped to the appropriate state. By default, state transitions are managed simply by removing the current state label and applying the appropriate next state label.  Waffle.io may be used to do this automatically via drag-drop. The following label mappings are in use:
@@ -57,14 +57,14 @@ Items in the integration testing state have passed all unit tests in the develop
 ### Failed Tests
 When a test fails, in addition to moving the item back to **In Development**, the tester should apply the **Test Failed** label and re-assign the issue to the original developer.  This will aid in tracking priorities and help developers identify what needs their immediate attention.
 
-![Issue Management Process](https://github.com/travisstokes/ProcessManagement/blob/master/Software%20Development%20Process.png)
+![Issue Management Process](https://github.com/80-20/ProcessManagement/blob/master/Software%20Development%20Process.png)
 
 # Release Closure
 Each release has several tasks that need to be carried out to finalize the release.  These tasks are designed to facilitate testing and publication of the completed release, as well as to prepare for the next release.
 
 The first step is to update the test and development databases with the latest data from production.  Following that, we publish the completed release to the test environment and perform integration testing.  Once all of the release items have passed integration testing, we deploy the release and update any pending operational items to indicate which ones can now be worked on.  The following graphic shows the individual steps for this process.
 
-![Sprint Closure Process](https://github.com/travisstokes/ProcessManagement/blob/master/Sprint%20Closure.png)
+![Sprint Closure Process](https://github.com/80-20/ProcessManagement/blob/master/Sprint%20Closure.png)
 
 # Tool Configuration
 
@@ -74,16 +74,16 @@ Configuration of GitHub Issues requires only two steps:
 - Configure labels
 
 The following can be used for configuring the label names and colors:
-* ![Ready Label](https://github.com/travisstokes/ProcessManagement/blob/master/Labels/Ready.png) [Ready, #fbca04]
-* ![In Development Label](https://github.com/travisstokes/ProcessManagement/blob/master/Labels/InDevelopment.png) [In Development, #fbca04]
-* ![Ready For Testing Label](https://github.com/travisstokes/ProcessManagement/blob/master/Labels/ReadyForTesting.png) [Ready for Testing, #009800]
-* ![In Testing Label](https://github.com/travisstokes/ProcessManagement/blob/master/Labels/InTesting.png) [In Testing, #009800]
-* ![Integration Testing Label](https://github.com/travisstokes/ProcessManagement/blob/master/Labels/IntegrationTesting.png) [Integration Testing, #009800]
-* ![Blocked Label](https://github.com/travisstokes/ProcessManagement/blob/master/Labels/blocked.png) [blocked, #e11d21]
-* ![Bug Label](https://github.com/travisstokes/ProcessManagement/blob/master/Labels/bug.png) [bug, #eb6420]
-* ![Post Release Label](https://github.com/travisstokes/ProcessManagement/blob/master/Labels/PostRelease.png) [Post Release, #bfdadc]
+* ![Ready Label](https://github.com/80-20/ProcessManagement/blob/master/Labels/Ready.png) [Ready, #fbca04]
+* ![In Development Label](https://github.com/80-20/ProcessManagement/blob/master/Labels/InDevelopment.png) [In Development, #fbca04]
+* ![Ready For Testing Label](https://github.com/80-20/ProcessManagement/blob/master/Labels/ReadyForTesting.png) [Ready for Testing, #009800]
+* ![In Testing Label](https://github.com/80-20/ProcessManagement/blob/master/Labels/InTesting.png) [In Testing, #009800]
+* ![Integration Testing Label](https://github.com/80-20/ProcessManagement/blob/master/Labels/IntegrationTesting.png) [Integration Testing, #009800]
+* ![Blocked Label](https://github.com/80-20/ProcessManagement/blob/master/Labels/blocked.png) [blocked, #e11d21]
+* ![Bug Label](https://github.com/80-20/ProcessManagement/blob/master/Labels/bug.png) [bug, #eb6420]
+* ![Post Release Label](https://github.com/80-20/ProcessManagement/blob/master/Labels/PostRelease.png) [Post Release, #bfdadc]
 
 Note that colors are shared between **Ready** and **In Development**, as well as between **Ready for Testing**, **In Testing**, and **Integration Testing**.  This is intentional to help highlight the actors responsible for those states.
 
 ### Waffle
-![Waffle.io Configuration](https://github.com/travisstokes/ProcessManagement/blob/master/WaffleConfiguration.PNG)
+![Waffle.io Configuration](https://github.com/80-20/ProcessManagement/blob/master/WaffleConfiguration.PNG)
