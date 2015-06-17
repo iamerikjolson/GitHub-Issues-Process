@@ -1,4 +1,4 @@
-This document defines the general process management guidelines we will adhere to.  It is intentionally lean and covers primarily how individual releases are managed. 
+aThis document defines the general process management guidelines we will adhere to.  It is intentionally lean and covers primarily how individual releases are managed. 
 
 * [Scope Management](#scope-management)
   * [Release Scope] (#release-scope)
