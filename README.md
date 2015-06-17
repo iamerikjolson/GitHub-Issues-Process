@@ -81,7 +81,7 @@ The following can be used for configuring the label names and colors:
 * ![Bug Label](https://github.com/80-20/ProcessManagement/blob/master/Labels/bug.png) [bug, #eb6420]
 * ![Post Release Label](https://github.com/80-20/ProcessManagement/blob/master/Labels/PostRelease.png) [Post Release, #bfdadc]
 
-Note that colors are shared between **Ready** and **In Development**, as well as between **Ready for Testing**, **In Testing**, and **Integration Testing**.  This is intentional to help highlight the actors responsible for those states.
+Note that colors are shared between **Ready** and **In Development**, as well as between **Feature Testing** and **Integration Testing**.  This is intentional to help highlight the actors responsible for those states.
 
 ### Waffle
 ![Waffle.io Configuration](https://github.com/80-20/ProcessManagement/blob/master/WaffleConfiguration.PNG)
