@@ -42,13 +42,12 @@ Issues flow through the following states during their lifecycle:
 
 All states are controlled via GitHub labels mapped to the appropriate state. By default, state transitions are managed simply by removing the current state label and applying the appropriate next state label.  Waffle.io may be used to do this automatically via drag-drop. The following label mappings are in use:
 
-* Backlog -> No Label, issue is Open
+* Backlog -> No State Label, issue is Open
 * Ready -> Ready
 * In Development -> In Development
-* Ready for Testing -> Ready for Testing
-* In Testing -> In Testing
+* Feature Testing -> Feature Testing
 * Integration Testing -> Integration Testing
-* Done -> No Label, issue is Closed
+* Done -> Issue is Closed
 
 ### Integration Testing
 Items in the integration testing state have passed all unit tests in the development environment and are considered complete pending final end of phase integration testing.  Once all development work for the sprint has been completed, items will be integration tested before being moved to Done.
