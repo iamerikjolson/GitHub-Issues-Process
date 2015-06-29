@@ -24,7 +24,7 @@ The starting scope of work for a given release will be determined in two phases,
 ### Operational Scope
 For operational scope we are using an adaptive approach with dynamically determined releases. Most operational scope items are considered to be immediate needs and take priority over release scope items.  As such, the impact of adding of operational scope should be juxtaposed against the impact to the the scope or timing of the current release. 
 
-Issues that arise while a release is in development should typically only be hot-fixed as an operational item if it is actively inhibiting operations. When performing impact analysis on new issues try to keep in mind that the default preference is to hold issues until a formal release and that the purpose of impact analysis is to determine if the issue justifies deviating from preference.
+Issues that arise during the course of business should typically only be handled as an operational item if it is actively inhibiting operations. When performing impact analysis on new issues try to keep in mind that the default preference is to hold issues until a formal release, and that the purpose of impact analysis is to determine if the issue justifies deviating from preference.
 
 For example, a small issue that only affects staff and has a known work-around does not necessarily need to be hot-fixed even if it is a quick fix, as it is not actively limiting the company's ability to do business.  As such, it falls into the default process and should be incorporated into the current or future release, depending on the priority of the item.
 
