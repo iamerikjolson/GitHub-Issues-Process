@@ -46,6 +46,7 @@ Issues flow through the following states during their lifecycle:
 All states are controlled via GitHub labels mapped to the appropriate state. By default, state transitions are managed simply by removing the current state label and applying the appropriate next state label.  Waffle.io may be used to do this automatically via drag-drop. The following label mappings are in use:
 
 * Backlog -> No State Label, issue is Open
+* Analysis -> Analysis
 * Ready -> Ready
 * In Development -> In Development
 * Feature Testing -> Feature Testing
