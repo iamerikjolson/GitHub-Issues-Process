@@ -34,6 +34,7 @@ For example, a small issue that only affects staff and has a known work-around d
 Issues flow through the following states during their lifecycle:
 
 1. **Backlog** issues have been identified but are not yet ready for development.
+2. ![Analysis Label](https://github.com/80-20/ProcessManagement/blob/master/Labels/Analysis.png) issues are actively being worked on, but may not be ready for development.
 2. ![Ready Label](https://github.com/80-20/ProcessManagement/blob/master/Labels/Ready.png) issues have been fleshed out to the point where it is believed they are ready to be acted upon by developers working on the associated milestone.
 3. ![In Development Label](https://github.com/80-20/ProcessManagement/blob/master/Labels/InDevelopment.png) issues are actively being worked on by a developer.  With the exception of items that are blocked or returned to development due to failed tests, each developer should strive to have as few items in this state as possible. 
 4. ![Feature Testing Label](https://github.com/80-20/ProcessManagement/blob/master/Labels/FeatureTesting.png) issues are code complete and can be acted on by testers.  All code is assumed to be checked in and deployed to the appropriate environments for testing.
