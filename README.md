@@ -34,7 +34,7 @@ For example, a small issue that only affects staff and has a known work-around d
 Issues flow through the following states during their lifecycle:
 
 1. **Backlog** issues have been identified but are not yet ready for development.
-2. ![Analysis Label](https://github.com/80-20/ProcessManagement/blob/master/Labels/Analysis.png) issues are actively being worked on, but may not be ready for development.
+2. ![Analysis Label](https://github.com/80-20/ProcessManagement/blob/master/Labels/analysis.png) issues are actively being worked on, but may not be ready for development.
 2. ![Ready Label](https://github.com/80-20/ProcessManagement/blob/master/Labels/Ready.png) issues have been fleshed out to the point where it is believed they are ready to be acted upon by developers working on the associated milestone.
 3. ![In Development Label](https://github.com/80-20/ProcessManagement/blob/master/Labels/InDevelopment.png) issues are actively being worked on by a developer.  With the exception of items that are blocked or returned to development due to failed tests, each developer should strive to have as few items in this state as possible. 
 4. ![Feature Testing Label](https://github.com/80-20/ProcessManagement/blob/master/Labels/FeatureTesting.png) issues are code complete and can be acted on by testers.  All code is assumed to be checked in and deployed to the appropriate environments for testing.
@@ -73,16 +73,15 @@ Configuration of GitHub Issues requires only two steps:
 - Configure labels
 
 The following can be used for configuring the label names and colors:
+* ![Analysis](https://github.com/80-20/ProcessManagement/blob/master/Labels/analysis.png) [Analysis, #fbca04]
 * ![Ready Label](https://github.com/80-20/ProcessManagement/blob/master/Labels/Ready.png) [Ready, #fbca04]
 * ![In Development Label](https://github.com/80-20/ProcessManagement/blob/master/Labels/InDevelopment.png) [In Development, #fbca04]
 * ![Feature Testing Label](https://github.com/80-20/ProcessManagement/blob/master/Labels/FeatureTesting.png) [Feature Testing, #009800]
 * ![Integration Testing Label](https://github.com/80-20/ProcessManagement/blob/master/Labels/IntegrationTesting.png) [Integration Testing, #009800]
 * ![Blocked Label](https://github.com/80-20/ProcessManagement/blob/master/Labels/blocked.png) [blocked, #e11d21]
-* ![Test Failed Label](https://github.com/80-20/ProcessManagement/blob/master/Labels/testFailed.png) [test failed, #e11d21]
-* ![Bug Label](https://github.com/80-20/ProcessManagement/blob/master/Labels/bug.png) [bug, #eb6420]
-* ![Post Release Label](https://github.com/80-20/ProcessManagement/blob/master/Labels/PostRelease.png) [Post Release, #bfdadc]
-
-Note that colors are shared between **Ready** and **In Development**, as well as between **Feature Testing** and **Integration Testing**.  This is intentional to help highlight the actors responsible for those states.
+* ![Test Failed Label](https://github.com/80-20/ProcessManagement/blob/master/Labels/testFailed.png) [Test Failed, #e11d21]
+* ![Bug Label](https://github.com/80-20/ProcessManagement/blob/master/Labels/bug.png) [Bug, #eb6420]
+* ![Trash](https://github.com/80-20/ProcessManagement/blob/master/Labels/PostRelease.png) [Trash, #000000]
 
 ### Waffle
 ![Waffle.io Configuration](https://github.com/80-20/ProcessManagement/blob/master/WaffleConfiguration.PNG)
