@@ -24,7 +24,7 @@ The starting scope of work for a given release will be determined in two phases,
 ### Operational Scope
 For operational scope we are using an adaptive approach with dynamically determined releases. Most operational scope items are considered to be immediate needs and take priority over release scope items.  As such, the impact of adding of operational scope should be juxtaposed against the impact to the the scope or timing of the current release. 
 
-Issues that arise while a release is in development should typically only be hot-fixed as an operational item if it is actively inhibiting operations. When performing impact analysis on new issues try to keep in mind that the default preference is to hold issues until a formal release and that the purpose of impact analysis is to determine if the issue justifies deviating from preference.
+Issues that arise during the course of business should typically only be handled as an operational item if it is actively inhibiting operations. When performing impact analysis on new issues try to keep in mind that the default preference is to hold issues until a formal release, and that the purpose of impact analysis is to determine if the issue justifies deviating from preference.
 
 For example, a small issue that only affects staff and has a known work-around does not necessarily need to be hot-fixed even if it is a quick fix, as it is not actively limiting the company's ability to do business.  As such, it falls into the default process and should be incorporated into the current or future release, depending on the priority of the item.
 
@@ -34,6 +34,7 @@ For example, a small issue that only affects staff and has a known work-around d
 Issues flow through the following states during their lifecycle:
 
 1. **Backlog** issues have been identified but are not yet ready for development.
+2. ![Analysis Label](https://github.com/80-20/ProcessManagement/blob/master/Labels/analysis.png) issues are actively being worked on, but may not be ready for development.
 2. ![Ready Label](https://github.com/80-20/ProcessManagement/blob/master/Labels/Ready.png) issues have been fleshed out to the point where it is believed they are ready to be acted upon by developers working on the associated milestone.
 3. ![In Development Label](https://github.com/80-20/ProcessManagement/blob/master/Labels/InDevelopment.png) issues are actively being worked on by a developer.  With the exception of items that are blocked or returned to development due to failed tests, each developer should strive to have as few items in this state as possible. 
 4. ![Feature Testing Label](https://github.com/80-20/ProcessManagement/blob/master/Labels/FeatureTesting.png) issues are code complete and can be acted on by testers.  All code is assumed to be checked in and deployed to the appropriate environments for testing.
@@ -42,13 +43,12 @@ Issues flow through the following states during their lifecycle:
 
 All states are controlled via GitHub labels mapped to the appropriate state. By default, state transitions are managed simply by removing the current state label and applying the appropriate next state label.  Waffle.io may be used to do this automatically via drag-drop. The following label mappings are in use:
 
-* Backlog -> No Label, issue is Open
+* Backlog -> No State Label, issue is Open
 * Ready -> Ready
 * In Development -> In Development
-* Ready for Testing -> Ready for Testing
-* In Testing -> In Testing
+* Feature Testing -> Feature Testing
 * Integration Testing -> Integration Testing
-* Done -> No Label, issue is Closed
+* Done -> Issue is Closed
 
 ### Integration Testing
 Items in the integration testing state have passed all unit tests in the development environment and are considered complete pending final end of phase integration testing.  Once all development work for the sprint has been completed, items will be integration tested before being moved to Done.
@@ -73,15 +73,15 @@ Configuration of GitHub Issues requires only two steps:
 - Configure labels
 
 The following can be used for configuring the label names and colors:
+* ![Analysis](https://github.com/80-20/ProcessManagement/blob/master/Labels/analysis.png) [Analysis, #fbca04]
 * ![Ready Label](https://github.com/80-20/ProcessManagement/blob/master/Labels/Ready.png) [Ready, #fbca04]
 * ![In Development Label](https://github.com/80-20/ProcessManagement/blob/master/Labels/InDevelopment.png) [In Development, #fbca04]
 * ![Feature Testing Label](https://github.com/80-20/ProcessManagement/blob/master/Labels/FeatureTesting.png) [Feature Testing, #009800]
 * ![Integration Testing Label](https://github.com/80-20/ProcessManagement/blob/master/Labels/IntegrationTesting.png) [Integration Testing, #009800]
 * ![Blocked Label](https://github.com/80-20/ProcessManagement/blob/master/Labels/blocked.png) [blocked, #e11d21]
-* ![Bug Label](https://github.com/80-20/ProcessManagement/blob/master/Labels/bug.png) [bug, #eb6420]
-* ![Post Release Label](https://github.com/80-20/ProcessManagement/blob/master/Labels/PostRelease.png) [Post Release, #bfdadc]
-
-Note that colors are shared between **Ready** and **In Development**, as well as between **Feature Testing** and **Integration Testing**.  This is intentional to help highlight the actors responsible for those states.
+* ![Test Failed Label](https://github.com/80-20/ProcessManagement/blob/master/Labels/testFailed.png) [Test Failed, #e11d21]
+* ![Bug Label](https://github.com/80-20/ProcessManagement/blob/master/Labels/bug.png) [Bug, #eb6420]
+* ![Trash](https://github.com/80-20/ProcessManagement/blob/master/Labels/PostRelease.png) [Trash, #000000]
 
 ### Waffle
 ![Waffle.io Configuration](https://github.com/80-20/ProcessManagement/blob/master/WaffleConfiguration.PNG)
