@@ -81,7 +81,7 @@ The following can be used for configuring the label names and colors:
 * ![Blocked Label](https://github.com/80-20/ProcessManagement/blob/master/Labels/blocked.png) [blocked, #e11d21]
 * ![Test Failed Label](https://github.com/80-20/ProcessManagement/blob/master/Labels/testFailed.png) [Test Failed, #e11d21]
 * ![Bug Label](https://github.com/80-20/ProcessManagement/blob/master/Labels/bug.png) [Bug, #eb6420]
-* ![Trash](https://github.com/80-20/ProcessManagement/blob/master/Labels/PostRelease.png) [Trash, #000000]
+* ![Trash](https://github.com/80-20/ProcessManagement/blob/master/Labels/Trash.png) [Trash, #000000]
 
 ### Waffle
 ![Waffle.io Configuration](https://github.com/80-20/ProcessManagement/blob/master/WaffleConfiguration.PNG)
