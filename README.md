@@ -28,6 +28,8 @@ Issues that arise during the course of business should typically only be handled
 
 For example, a small issue that only affects staff and has a known work-around does not necessarily need to be hot-fixed even if it is a quick fix, as it is not actively limiting the company's ability to do business.  As such, it falls into the default process and should be incorporated into the current or future release, depending on the priority of the item.
 
+In the case that a release must be handled in operational scope, it should be included in a an operational milestoned labeled using the major, minor, and revision versions for the build it affects, followed by the operations release number as follows: Major.Minor.Revision Ops#XX"
+
 ![Operational Issue Intake Process](https://github.com/80-20/ProcessManagement/blob/master/Operational%20Issue%20Intake%20Process.png)
 
 # Task Management
