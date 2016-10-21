@@ -81,8 +81,8 @@ The following can be used for configuring the label names and colors:
 * ![In Development Label](https://github.com/80-20/ProcessManagement/blob/master/Labels/InDevelopment.png) [In Development, #fbca04]
 * ![Feature Testing Label](https://github.com/80-20/ProcessManagement/blob/master/Labels/FeatureTesting.png) [Feature Testing, #009800]
 * ![Integration Testing Label](https://github.com/80-20/ProcessManagement/blob/master/Labels/IntegrationTesting.png) [Integration Testing, #009800]
-* ![Blocked Label](https://github.com/80-20/ProcessManagement/blob/master/Labels/blocked.png) [Blocked, #e11d21]
-* ![Test Failed Label](https://github.com/80-20/ProcessManagement/blob/master/Labels/testFailed.png) [Test Failed, #e11d21]
+* ![Blocked Label](https://github.com/80-20/ProcessManagement/blob/master/Labels/blocked.png) [Blocked, #b60205]
+* ![Test Failed Label](https://github.com/80-20/ProcessManagement/blob/master/Labels/testFailed.png) [Test Failed, #b60205]
 * ![Bug Label](https://github.com/80-20/ProcessManagement/blob/master/Labels/bug.png) [Bug, #eb6420]
 * ![Trash](https://github.com/80-20/ProcessManagement/blob/master/Labels/Trash.png) [Trash, #000000]
 
