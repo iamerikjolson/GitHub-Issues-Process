@@ -5,10 +5,10 @@ Issues flow through the following states during their lifecycle:
 
 1. **Backlog** issues have been identified but are not yet ready for development.
 2. ![Analysis Label](Labels/analysis.png) issues are actively being analyzed, but may not be ready for development.
-2. ![Ready Label](Labels/Ready.png) issues have been fleshed out to the point where it is believed they are ready to be acted upon by developers working on the associated milestone.
-3. ![In Development Label](Labels/InDevelopment.png) issues are actively being worked on by a developer.  With the exception of items that are blocked or returned to development due to failed tests, each developer should strive to have as few items in this state as possible.
-4. ![Feature Testing Label](Labels/FeatureTesting.png) issues are code complete and can be acted on by testers.  All code is assumed to be checked in and deployed to the appropriate environments for testing.
-5. ![Integration Testing Label](Labels/IntegrationTesting.png) issues have been unit tested and are ready for closure pending end of sprint integration testing.
+2. ![Ready Label](Labels/ready.png) issues have been fleshed out to the point where it is believed they are ready to be acted upon by developers working on the associated milestone.
+3. ![In Development Label](Labels/in-development.png) issues are actively being worked on by a developer.  With the exception of items that are blocked or returned to development due to failed tests, each developer should strive to have as few items in this state as possible.
+4. ![Feature Testing Label](Labels/feature-testing.png) issues are code complete and can be acted on by testers.  All code is assumed to be checked in and deployed to the appropriate environments for testing.
+5. ![Integration Testing Label](Labels/integration-testing.png) issues have been unit tested and are ready for closure pending end of sprint integration testing.
 6. **Done** issues have passed testing and are closed.
 
 All states are controlled via GitHub labels mapped to the appropriate state. By default, state transitions are managed simply by removing the current state label and applying the appropriate next state label.  Waffle.io may be used to do this automatically via drag-drop. The following label mappings are in use:
@@ -44,14 +44,14 @@ The only thing that you need to configure to use this process is to add the belo
 
 The following can be used for configuring the label names and colors:
 * ![Analysis](Labels/analysis.png) [Analysis, #fbca04]
-* ![Ready Label](Labels/Ready.png) [Ready, #fbca04]
-* ![In Development Label](Labels/InDevelopment.png) [In Development, #fbca04]
-* ![Feature Testing Label](Labels/FeatureTesting.png) [Feature Testing, #009800]
-* ![Integration Testing Label](Labels/IntegrationTesting.png) [Integration Testing, #009800]
+* ![Ready Label](Labels/ready.png) [Ready, #fbca04]
+* ![In Development Label](Labels/in-development.png) [In Development, #fbca04]
+* ![Feature Testing Label](Labels/feature-testing.png) [Feature Testing, #009800]
+* ![Integration Testing Label](Labels/integration-testing.png) [Integration Testing, #009800]
 * ![Blocked Label](Labels/blocked.png) [Blocked, #b60205]
-* ![Test Failed Label](Labels/testFailed.png) [Test Failed, #b60205]
+* ![Test Failed Label](Labels/test-failed.png) [Test Failed, #b60205]
 * ![Bug Label](Labels/bug.png) [Bug, #d93f0b]
-* ![Trash](Labels/Trash.png) [Trash, #000000]
+* ![Trash](Labels/trash.png) [Trash, #000000]
 
 ### Option 2: Automatically add the labels
 
