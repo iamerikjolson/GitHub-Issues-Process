@@ -7,9 +7,10 @@ Issues flow through the following states during their lifecycle:
 2. <img src="Labels/analysis.png" height="25"> issues are actively being analyzed, but may not be ready for development.
 2. <img src="Labels/ready.png" height="25"> issues have been fleshed out to the point where it is believed they are ready to be acted upon by developers working on the associated milestone.
 3. <img src="Labels/in-development.png" height="25"> issues are actively being worked on by a developer.  With the exception of items that are blocked or returned to development due to failed tests, each developer should strive to have as few items in this state as possible.
-4. <img src="Labels/feature-testing.png" height="25">issues are code complete and can be acted on by testers.  All code is assumed to be checked in and deployed to the appropriate environments for testing.
-5. <img src="Labels/integration-testing.png" height="25"> issues have been unit tested and are ready for closure pending end of sprint integration testing.
-6. **Done** issues have passed testing and are closed.
+5. <img src="Labels/code-review.png" height="25"> issues are code complete and can be acted on by reviewers. All code is assumed to be checked in a pull request created. The code reviewer makes recommendations to the developer as needed and once approved merges the feature branch to the testing environment.
+6. <img src="Labels/feature-testing.png" height="25">issues are code complete and can be acted on by testers.  All code is assumed to be checked in and deployed to the appropriate environments for testing.
+7. <img src="Labels/integration-testing.png" height="25"> issues have been unit tested and are ready for closure pending end of sprint integration testing.
+8. **Done** issues have passed testing and are closed.
 
 All states are controlled via GitHub labels mapped to the appropriate state. By default, state transitions are managed simply by removing the current state label and applying the appropriate next state label.  Waffle.io may be used to do this automatically via drag-drop. The following label mappings are in use:
 
