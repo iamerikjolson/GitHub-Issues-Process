@@ -42,17 +42,18 @@ The first step is to update the test and development databases with the latest d
 The only thing that you need to configure to use this process is to add the below labels to your repo.
 
 ### Option 1: Manually add the labels
-
+<img src="Labels/analysis.png" height="25">
 The following can be used for configuring the label names and colors:
-* ![Analysis](Labels/analysis.png) [Analysis, #fbca04]
-* ![Ready Label](Labels/ready.png) [Ready, #fbca04]
-* ![In Development Label](Labels/in-development.png) [In Development, #fbca04]
-* ![Feature Testing Label](Labels/feature-testing.png) [Feature Testing, #009800]
-* ![Integration Testing Label](Labels/integration-testing.png) [Integration Testing, #009800]
-* ![Blocked Label](Labels/blocked.png) [Blocked, #b60205]
-* ![Test Failed Label](Labels/test-failed.png) [Test Failed, #b60205]
-* ![Bug Label](Labels/bug.png) [Bug, #d93f0b]
-* ![Trash](Labels/trash.png) [Trash, #000000]
+* <img src="Labels/analysis.png" height="25"> [Analysis, #fbca04]
+* <img src="Labels/ready.png" height="25"> [Ready, #fbca04]
+* <img src="Labels/in-development.png" height="25"> [In Development, #fbca04]
+* <img src="Labels/code-review.png" height="25"> [Code Review, #fbca04]
+* <img src="Labels/feature-testing.png" height="25"> [Feature Testing, #009800]
+* <img src="Labels/integration-testing.png" height="25">[Integration Testing, #009800]
+* <img src="Labels/blocked.png" height="25"> [Blocked, #b60205]
+* <img src="Labels/test-failed.png" height="25"> [Test Failed, #b60205]
+* <img src="Labels/bug.png" height="25"> [Bug, #d93f0b]
+* <img src="Labels/trash.png" height="25"> [Trash, #000000]
 
 ### Option 2: Automatically add the labels
 
