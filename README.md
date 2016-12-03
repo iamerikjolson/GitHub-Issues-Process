@@ -5,15 +5,15 @@ Issues flow through the following states during their lifecycle:
 
 1. **Backlog** - issues have been identified but are not yet ready for development.
 
-2. ![Analysis Label](labels/analysis.png) - issues are actively being analyzed, typically by a tech lead to ensure the work is Ready for development.
+2. ![Analysis Label](img-labels/analysis.png) - issues are actively being analyzed, typically by a tech lead to ensure the work is Ready for development.
 
-2. ![Ready Label](labels/Ready.png) - issues have been fleshed out to the point where they are believed to be ready to be acted upon by developers working on the associated milestone.
+2. ![Ready Label](img-labels/Ready.png) - issues have been fleshed out to the point where they are believed to be ready to be acted upon by developers working on the associated milestone.
 
-3. ![In Development Label](labels/InDevelopment.png) - issues are actively being worked on by a developer.  With the exception of items that are blocked or returned to development due to failed tests, each developer should strive to have as few items in this state as possible.
+3. ![In Development Label](img-labels/InDevelopment.png) - issues are actively being worked on by a developer.  With the exception of items that are blocked or returned to development due to failed tests, each developer should strive to have as few items in this state as possible.
 
-4. ![Feature Testing Label](labels/FeatureTesting.png) - issues are code complete and can be acted on by testers.  All code is assumed to be checked in and deployed to the appropriate environments for testing.
+4. ![Feature Testing Label](img-labels/FeatureTesting.png) - issues are code complete and can be acted on by testers.  All code is assumed to be checked in and deployed to the appropriate environments for testing.
 
-5. ![Integration Testing Label](labels/IntegrationTesting.png) - issues have been unit tested and are ready for closure pending end of sprint integration testing.
+5. ![Integration Testing Label](img-labels/IntegrationTesting.png) - issues have been unit tested and are ready for closure pending end of sprint integration testing.
 
 6. **Done** - issues have passed testing and are closed.
 
@@ -50,23 +50,23 @@ The only thing that you need to configure to use this process is to add the belo
 
 The following can be used for configuring the label names and colors:
 
-![Analysis](labels/analysis.png) `#fbca04`
+![Analysis](img-labels/analysis.png) `#fbca04`
 
-![Ready Label](labels/Ready.png) `#fbca04`
+![Ready Label](img-labels/Ready.png) `#fbca04`
 
-![In Development Label](labels/InDevelopment.png) `#fbca04`
+![In Development Label](img-labels/InDevelopment.png) `#fbca04`
 
-![Feature Testing Label](labels/FeatureTesting.png) `#009800`
+![Feature Testing Label](img-labels/FeatureTesting.png) `#009800`
 
-![Integration Testing Label](labels/IntegrationTesting.png) `#009800`
+![Integration Testing Label](img-labels/IntegrationTesting.png) `#009800`
 
-![Blocked Label](labels/blocked.png) `#b60205`
+![Blocked Label](img-labels/blocked.png) `#b60205`
 
-![Test Failed Label](labels/testFailed.png) `#b60205`
+![Test Failed Label](img-labels/testFailed.png) `#b60205`
 
-![Bug Label](labels/bug.png) `#d93f0b`
+![Bug Label](img-labels/bug.png) `#d93f0b`
 
-![Trash](labels/Trash.png) `#000000`
+![Trash](img-labels/Trash.png) `#000000`
 
 ### Option 2: Script to add the labels
 
