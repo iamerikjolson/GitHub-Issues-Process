@@ -1,31 +1,26 @@
 This document defines the guidelines we follow for task management using GitHub Issues.  It is intentionally lean and covers primarily how individual releases are managed.
 
 # Task Management
-Issues flow through the following states during their lifecycle:
+Issues typically flow through the below states during their lifecycle.
 
-1. **Backlog** - issues have been identified but are not yet ready for development.
+Most states are controlled via GitHub labels. By default, state transitions are
+managed simply by removing the current state label and applying the appropriate
+next state label. The exception are the Backlog and Done states. State labels do not control these
+states. Rather they are controlled by being Open or Closed, and whether they are
+assigned to a milestone. That rule applies regardless of any labels assigned it.
 
-2. ![Analysis Label](img-labels/analysis.png) - issues are actively being analyzed, typically by a tech lead to ensure the work is Ready for development.
+The following state rules apply:
 
-2. ![Ready Label](img-labels/Ready.png) - issues have been fleshed out to the point where they are believed to be ready to be acted upon by developers working on the associated milestone.
+| State | In a Milestone? | Open Status | Label | Label / Description |
+|---|---|---|---|
+| Backlog | No | Open | Any | Issues have been identified but are not yet ready for development. |
+| Analysis | Yes | Open | ![Analysis Label](img-labels/analysis.png) | Issues are actively being analyzed, typically by a Business Analyst or Lead Developer, to ensure the work is Ready for development. |
+| Ready | Yes | Open | ![Ready Label](img-labels/Ready.png) | Issues have been fleshed out to the point where they are believed to be ready to be acted upon by developers working on the associated milestone. |
+| In Development | Yes | Open | ![In Development Label](img-labels/InDevelopment.png) | Issues are actively being worked on by a developer.  With the exception of items that are blocked or returned to development due to failed tests, each developer should strive to have as few items in this state as possible. |
+| Feature Testing | Yes | Open | ![Feature Testing Label](img-labels/FeatureTesting.png) | Issues are code complete and can be acted on by testers.  All code is assumed to be checked in and deployed to the appropriate environments for testing. |
+| Integration Testing | Yes | Open | ![Integration Testing Label](img-labels/IntegrationTesting.png) | Issues have been unit tested and are ready for closure pending end of sprint integration testing. |
+| Done | Any | No | Any | Issues have passed testing and are closed. |
 
-3. ![In Development Label](img-labels/InDevelopment.png) - issues are actively being worked on by a developer.  With the exception of items that are blocked or returned to development due to failed tests, each developer should strive to have as few items in this state as possible.
-
-4. ![Feature Testing Label](img-labels/FeatureTesting.png) - issues are code complete and can be acted on by testers.  All code is assumed to be checked in and deployed to the appropriate environments for testing.
-
-5. ![Integration Testing Label](img-labels/IntegrationTesting.png) - issues have been unit tested and are ready for closure pending end of sprint integration testing.
-
-6. **Done** - issues have passed testing and are closed.
-
-All states are controlled via GitHub labels mapped to the appropriate state. By default, state transitions are managed simply by removing the current state label and applying the appropriate next state label.  Waffle.io may be used to do this automatically via drag-drop. The following label mappings are in use:
-
-* Backlog -> No State Label, issue is Open
-* Analysis -> Analysis label
-* Ready -> Ready label
-* In Development -> In Development label
-* Feature Testing -> Feature Testing label
-* Integration Testing -> Integration Testing label
-* Done -> Issue is Closed (regardless of labels)
 
 ### Integration Testing
 Items in the integration testing state have passed all unit tests in the development environment and are considered complete pending final end of phase integration testing.  Once all development work for the sprint has been completed, items will be integration tested before being moved to Done.
