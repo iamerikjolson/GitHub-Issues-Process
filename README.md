@@ -11,8 +11,8 @@ assigned to a milestone. That rule applies regardless of any labels assigned it.
 
 The following state rules apply:
 
-| State | In a Milestone? | Open Status | Label | Label / Description |
-|---|---|---|---|
+| State | In a Milestone? | Open Status | Label | Description |
+|---|---|---|---|---|
 | Backlog | No | Open | Any | Issues have been identified but are not yet ready for development. |
 | Analysis | Yes | Open | ![Analysis Label](img-labels/analysis.png) | Issues are actively being analyzed, typically by a Business Analyst or Lead Developer, to ensure the work is Ready for development. |
 | Ready | Yes | Open | ![Ready Label](img-labels/Ready.png) | Issues have been fleshed out to the point where they are believed to be ready to be acted upon by developers working on the associated milestone. |
