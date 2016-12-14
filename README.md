@@ -9,28 +9,28 @@ next state label. The exception are the Backlog and Done states. State labels do
 states. Rather they are controlled by being Open or Closed, and whether they are
 assigned to a milestone. That rule applies regardless of any labels assigned it.
 
-The following state rules apply:
+## State Definitions
 
-| State | In a Milestone? | Open Status | Label | Description |
-|---|---|---|---|---|
-| Backlog | No | Open | Any | Issues have been identified but are not yet ready for development. |
-| Analysis | Yes | Open | ![Analysis Label](img-labels/analysis.png) | Issues are actively being analyzed, typically by a Business Analyst or Lead Developer, to ensure the work is Ready for development. |
-| Ready | Yes | Open | ![Ready Label](img-labels/Ready.png) | Issues have been fleshed out to the point where they are believed to be ready to be acted upon by developers working on the associated milestone. |
-| In Development | Yes | Open | ![In Development Label](img-labels/InDevelopment.png) | Issues are actively being worked on by a developer.  With the exception of items that are blocked or returned to development due to failed tests, each developer should strive to have as few items in this state as possible. |
-| Feature Testing | Yes | Open | ![Feature Testing Label](img-labels/FeatureTesting.png) | Issues are code complete and can be acted on by testers.  All code is assumed to be checked in and deployed to the appropriate environments for testing. |
-| Integration Testing | Yes | Open | ![Integration Testing Label](img-labels/IntegrationTesting.png) | Issues have been unit tested and are ready for closure pending end of sprint integration testing. |
-| Done | Any | No | Any | Issues have passed testing and are closed. |
+State | In a Milestone? | Open State | Description
+---|---|---|---
+Backlog | No | Open | Issues have been identified but are not yet ready for development.
+Analysis | Yes | Open | Issues are actively being analyzed, typically by a Business Analyst or Lead Developer, to ensure the work is Ready for development.
+Ready | Yes | Open  | Issues have been fleshed out to the point where they are believed to be ready to be acted upon by developers working on the associated milestone.
+In Development | Yes | Open | Issues are actively being worked on by a developer.  With the exception of items that are blocked or returned to development due to failed tests, each developer should strive to have as few items in this state as possible.
+Feature Testing | Yes | Open | Issues are code complete and can be acted on by testers.  All code is assumed to be checked in and deployed to the appropriate environments for testing.
+Integration Testing | Yes | Open | Issues have been unit tested and are ready for closure pending end of sprint integration testing.
+Done | Yes or No | Closed | Issues have passed testing and are closed.
 
 
-### Integration Testing
+## Integration Testing
 Items in the integration testing state have passed all unit tests in the development environment and are considered complete pending final end of phase integration testing.  Once all development work for the sprint has been completed, items will be integration tested before being moved to Done.
 
-### Failed Tests
+## Failed Tests
 When a test fails, in addition to moving the item back to **In Development**, the tester should apply the **Test Failed** label and re-assign the issue to the original developer.  This will aid in tracking priorities and help developers identify what needs their immediate attention.
 
 ![Issue Management Process](flowcharts/software-development-process.png)
 
-# Release Closure
+## Release Closure
 Each release has several tasks that need to be carried out to finalize the release.  These tasks are designed to facilitate testing and publication of the completed release, as well as to prepare for the next release.
 
 The first step is to update the test and development databases with the latest data from production.  Following that, we publish the completed release to the test environment and perform integration testing.  Once all of the release items have passed integration testing, we deploy the release and update any pending operational items to indicate which ones can now be worked on.  The following graphic shows the individual steps for this process.
@@ -45,25 +45,19 @@ The only thing that you need to configure to use this process is to add the belo
 
 The following can be used for configuring the label names and colors:
 
-![Analysis](img-labels/analysis.png) `#fbca04`
+Label | Colors
+---|---
+![Analysis](img-labels/analysis.png) | `#fbca04`
+![Ready Label](img-labels/Ready.png) | `#fbca04`
+![In Development Label](img-labels/InDevelopment.png) | `#fbca04`
+![Feature Testing Label](img-labels/FeatureTesting.png) | `#009800`
+![Integration Testing Label](img-labels/IntegrationTesting.png) | `#009800`
+![Blocked Label](img-labels/blocked.png) | `#b60205`
+![Test Failed Label](img-labels/testFailed.png) | `#b60205`
+![Bug Label](img-labels/bug.png) | `#d93f0b`
+![Trash](img-labels/Trash.png) | `#000000`
 
-![Ready Label](img-labels/Ready.png) `#fbca04`
-
-![In Development Label](img-labels/InDevelopment.png) `#fbca04`
-
-![Feature Testing Label](img-labels/FeatureTesting.png) `#009800`
-
-![Integration Testing Label](img-labels/IntegrationTesting.png) `#009800`
-
-![Blocked Label](img-labels/blocked.png) `#b60205`
-
-![Test Failed Label](img-labels/testFailed.png) `#b60205`
-
-![Bug Label](img-labels/bug.png) `#d93f0b`
-
-![Trash](img-labels/Trash.png) `#000000`
-
-### Option 2: Script to add the labels
+### Option 2: Run a script to add the labels
 
 This [bash script](/set-github-labels.sh) can be used to:
 * Remove the default GitHub labels automatically add when a repo is created.
