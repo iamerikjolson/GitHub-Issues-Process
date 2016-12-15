@@ -12,7 +12,7 @@ assigned to a milestone. That rule applies regardless of any labels assigned it.
 ## State Definitions
 
 State | In a Milestone? | Open State | % Complete | Description
----|---|---|---
+---|---|---|---|---
 Backlog | No | Open | 0% | Issues have been identified but are not yet ready for development.
 Analysis | Yes | Open | 10% | Issues are actively being analyzed, typically by a Business Analyst or Lead Developer, to ensure the work is Ready for development.
 Ready | Yes | Open  | 20% | Issues have been fleshed out to the point where they are believed to be ready to be acted upon by developers working on the associated milestone.
