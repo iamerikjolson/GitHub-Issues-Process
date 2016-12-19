@@ -71,3 +71,13 @@ To run the script:
 * Download (or git clone the repo).
 * Set execute permissions; `chmod +x /path/set-github-labels.sh`.
 * Drag the file into Terminal.
+
+# Schedule the project in GitHub
+
+1. Create a Milestone for every two weeks
+  * Name the project in the format "v[#.##]". Ex: "v0.01"
+  * Select the Due Date
+  * Add a brief description of the milestone
+1. Assign issues to each milestone
+1. Create an overall project schedule using [milepost](https://github.com/80-20/milepost).
+1. When satisfied with the schedule, email to the team and evenutally the client.
