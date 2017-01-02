@@ -21,7 +21,7 @@ curl -u $TOKEN:x-oauth-basic --request DELETE https://api.github.com/repos/$REPO
 curl -u $TOKEN:x-oauth-basic --request DELETE https://api.github.com/repos/$REPO_USER/$REPO_NAME/labels/question
 curl -u $TOKEN:x-oauth-basic --request DELETE https://api.github.com/repos/$REPO_USER/$REPO_NAME/labels/wontfix
 
-#create process labels
+#create state labels
 curl -u $TOKEN:x-oauth-basic --include --request POST --data '{"name":"Analysis","color":"fbca04"}' "https://api.github.com/repos/$REPO_USER/$REPO_NAME/labels"
 curl -u $TOKEN:x-oauth-basic --include --request POST --data '{"name":"Ready","color":"fbca04"}' "https://api.github.com/repos/$REPO_USER/$REPO_NAME/labels"
 curl -u $TOKEN:x-oauth-basic --include --request POST --data '{"name":"In Development","color":"fbca04"}' "https://api.github.com/repos/$REPO_USER/$REPO_NAME/labels"
@@ -29,5 +29,8 @@ curl -u $TOKEN:x-oauth-basic --include --request POST --data '{"name":"Feature T
 curl -u $TOKEN:x-oauth-basic --include --request POST --data '{"name":"Integration Testing","color":"009800"}' "https://api.github.com/repos/$REPO_USER/$REPO_NAME/labels"
 curl -u $TOKEN:x-oauth-basic --include --request POST --data '{"name":"Blocked","color":"b60205"}' "https://api.github.com/repos/$REPO_USER/$REPO_NAME/labels"
 curl -u $TOKEN:x-oauth-basic --include --request POST --data '{"name":"Test Failed","color":"b60205"}' "https://api.github.com/repos/$REPO_USER/$REPO_NAME/labels"
+
+#create helper labels
 curl -u $TOKEN:x-oauth-basic --include --request POST --data '{"name":"Bug","color":"d93f0b"}' "https://api.github.com/repos/$REPO_USER/$REPO_NAME/labels"
 curl -u $TOKEN:x-oauth-basic --include --request POST --data '{"name":"Trash","color":"000000"}' "https://api.github.com/repos/$REPO_USER/$REPO_NAME/labels"
+curl -u $TOKEN:x-oauth-basic --include --request POST --data '{"name":"Requirement","color":"c5def5"}' "https://api.github.com/repos/$REPO_USER/$REPO_NAME/labels"

@@ -11,6 +11,8 @@ assigned to a milestone. That rule applies regardless of any labels assigned it.
 
 ## State Definitions
 
+Any issue with a ![](img-labels/trash.png) label is automatically excluded from the below states.
+
 State | Label | In a Milestone? | Open State | % Complete | Description
 ---|---|---|---|---|---
 Backlog | n/a | No | Open | 0% | Issues have been identified but are not yet ready for development.
@@ -46,7 +48,7 @@ The only thing that you need to configure to use this process is to add the belo
 
 The following can be used for configuring the label names and colors:
 
-Label | Colors
+State Labels | Colors
 ---|---
 ![](img-labels/analysis.png) | `#fbca04`
 ![](img-labels/ready.png) | `#fbca04`
@@ -56,8 +58,12 @@ Label | Colors
 ![](img-labels/integration-testing.png) | `#009800`
 ![](img-labels/blocked.png) | `#b60205`
 ![](img-labels/test-failed.png) | `#b60205`
-![](img-labels/bug.png) | `#d93f0b`
-![](img-labels/trash.png) | `#000000`
+
+Helper&nbsp;Labels&nbsp;&nbsp;&nbsp;&nbsp; | Colors | Comment
+---|---|---
+![](img-labels/bug.png) | `#d93f0b` | Used to discriminate bugs from other issues.
+![](img-labels/trash.png) | `#000000` | Since you cannot delete an issue in GitHub Issues, this is used to mark the issue as Trash meaning it's no longer valid.
+![](img-labels/requirement.png) | `#c5def5` | Identifies the issues as being a formal requirement.
 
 ### Option 2: Run a script to add the labels
 
