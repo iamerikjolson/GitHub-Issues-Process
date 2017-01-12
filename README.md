@@ -20,6 +20,7 @@ Analysis | Analysis |Yes | Open | 10% | Issues are actively being analyzed, typi
 Ready | Ready | Yes | Open  | 20% | Issues have been fleshed out to the point where they are believed to be ready to be acted upon by developers working on the associated milestone.
 In Development | In Development | Yes | Open | 30% | Issues are actively being worked on by a developer.  With the exception of items that are blocked or returned to development due to failed tests, each developer should strive to have as few items in this state as possible.
 Code Review | Code Review | Yes | Open | 70% | The developer believes he/she is complete and has submitted the issue for peer review.
+Test Failed | Test Failed | Yes | Open | 70% | The tester failed the implementation. It is assumed that failed items went through code review, so they inherit the percent complete from Code Review.
 Feature Testing | Feature Testing | Yes | Open | 80% | Issues are code complete and can be acted on by testers.  All code is assumed to be checked in and deployed to the appropriate environments for testing.
 Integration Testing | Integration Testing | Yes | Open | 90% | Issues have been unit tested and are ready for closure pending end of sprint integration testing.
 Done | n/a | n/a | Closed | 100% | Issues have passed testing and are closed.
