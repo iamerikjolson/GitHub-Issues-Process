@@ -17,15 +17,15 @@ Any issue with a ![flag-trash](img/labels/flag-trash.png) label is automatically
 
 State | Label&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | In a Milestone? | Issue State | Progress | Description
 ---|---|:-:|---|--:|---
-**Backlog** | n/a | ✗ | Open | 0% | Issues have been identified but are not yet ready for development.
-**Analysis** | _state-analysis_ | ✓ | Open | 10% | Issues are actively being analyzed, typically by a Business Analyst or Lead Developer, to ensure the work is Ready for development.
-**Ready** | _state-ready_ | ✓ | Open  | 20% | Issues have been fleshed out to the point where they are believed to be ready to be acted upon by developers working on the associated milestone.
-**Test Failing** | _state-test-failing_ | ✓ | Open | 30% | The tester failed the implementation. It is assumed that failed items went through code review, so they inherit the percent complete from Code Review.
-**In Development** | _state-in-development_ | ✓ | Open | 30% | Issues are actively being worked on by a developer.  With the exception of items that are blocked or returned to development due to failed tests, each developer should strive to have as few items in this state as possible.
-**Code Review** | _state-code-review_ | ✓ | Open | 70% | The developer believes he/she is complete and has submitted the issue for peer review.
-**Feature Testing** | _state-feature-testing_ | ✓ | Open | 80% | Issues are code complete and can be acted on by testers.  All code is assumed to be checked in and deployed to the appropriate environments for testing.
-**Integration Testing** | _state-integration-testing_ | ✓ | Open | 90% | Issues have been unit tested and are ready for closure pending end of sprint integration testing.
-**Done** | n/a | n/a | Closed | 100% | Issues have passed testing and are closed.
+**Backlog** | n/a | ✗ | ![Open](img/issues/issue-open.png) | 0% | Issues have been identified but are not yet ready for development.
+**Analysis** | _state-analysis_ | ✓ | ![Open](img/issues/issue-open.png) | 10% | Issues are actively being analyzed, typically by a Business Analyst or Lead Developer, to ensure the work is Ready for development.
+**Ready** | _state-ready_ | ✓ | ![Open](img/issues/issue-open.png)  | 20% | Issues have been fleshed out to the point where they are believed to be ready to be acted upon by developers working on the associated milestone.
+**Test Failing** | _state-test-failing_ | ✓ | ![Open](img/issues/issue-open.png) | 30% | The tester failed the implementation. It is assumed that failed items went through code review, so they inherit the percent complete from Code Review.
+**In Development** | _state-in-development_ | ✓ | ![Open](img/issues/issue-open.png) | 30% | Issues are actively being worked on by a developer.  With the exception of items that are blocked or returned to development due to failed tests, each developer should strive to have as few items in this state as possible.
+**Code Review** | _state-code-review_ | ✓ | ![Open](img/issues/issue-open.png) | 70% | The developer believes he/she is complete and has submitted the issue for peer review.
+**Feature Testing** | _state-feature-testing_ | ✓ | ![Open](img/issues/issue-open.png) | 80% | Issues are code complete and can be acted on by testers.  All code is assumed to be checked in and deployed to the appropriate environments for testing.
+**Integration Testing** | _state-integration-testing_ | ✓ | ![Open](img/issues/issue-open.png) | 90% | Issues have been unit tested and are ready for closure pending end of sprint integration testing.
+**Done** | n/a | n/a | ![Closed](img/issues/issue-closed.png) | 100% | Issues have passed testing and are closed.
 
 ### Testing
 
@@ -60,7 +60,7 @@ The script requests a GitHub Personal Access Token which in order to access priv
 
 The following can be used for configuring the label names and colors:
 
-**State labels**
+#### State labels
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 | Label | Color | Description
@@ -73,7 +73,7 @@ The following can be used for configuring the label names and colors:
 ![state-feature-testing](img/labels/state-feature-testing.png) | _state-feature-testing_ | `#59a901` | "
 ![state-integration-testing](img/labels/state-integration-testing.png) | _state-integration-testing_ | `#009800` | "
 
-**Priority labels**
+#### Priority labels
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 | Label | Color | Description
@@ -82,7 +82,7 @@ The following can be used for configuring the label names and colors:
 ![priority-med](img/labels/priority-med.png) | _priority-med_ | `#85ff97` | Normal priority
 ![priority-low](img/labels/priority-low.png) | _priority-low_ | `#adffba` | Low priority
 
-**Type labels (optional)**
+#### Type labels (optional)
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 | Label | Color | Description
@@ -91,7 +91,7 @@ The following can be used for configuring the label names and colors:
 ![type-enhancement](img/labels/type-enhancement.png) | _type-enhancement_ | `#5b2a68` | Enhancement / Feature request
 ![type-documentation](img/labels/type-documentation.png) | _type-documentation_ | `#2740a1` | Project documentation (`README.md`/Wiki/Javadoc/...)
 
-**Flag labels**
+#### Flag labels
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 | Label | Color | Description
