@@ -13,7 +13,7 @@ assigned to a milestone. That rule applies regardless of any labels assigned to 
 
 ## States
 
-Any issue with a ![flag-trash](img-labels/flag-trash.png) label is automatically excluded from the below states.
+Any issue with a ![flag-trash](img/labels/flag-trash.png) label is automatically excluded from the below states.
 
 State | Label&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | In a Milestone? | Issue State | Progress | Description
 ---|---|:-:|---|--:|---
@@ -35,7 +35,9 @@ Items in the integration testing state have passed all unit tests in the develop
 #### Failed Tests
 When a test fails, in addition to moving the item back to _In Development_, the tester should apply the _Test Failing_ label and re-assign the issue to the original developer.  This will aid in tracking priorities and help developers identify what needs their immediate attention.
 
-![Issue Management Process](img/flowcharts/software-development-process.svg)
+## Schematic
+
+![Issue Management Process](img/flowcharts/software-development-process.png)
 
 ## Labels
 
@@ -63,44 +65,44 @@ The following can be used for configuring the label names and colors:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 | Label | Color | Description
 ---|---|---|:-:
-![state-analysis](img-labels/state-analysis.png) | _state-analysis_ | `#dd7404` | See state description above
-![state-ready](img-labels/state-ready.png) | _state-ready_ | `#ec9f04` | "
-![state-test-failing](img-labels/state-test-failing.png) | _state-test-failing_ | `#f5ba04` | "
-![state-in-development](img-labels/state-in-development.png) | _state-in-development_ | `#fbca04` | "
-![state-code-review](img-labels/state-code-review.png) | _state-code-review_ | `#b3bb02` | "
-![state-feature-testing](img-labels/state-feature-testing.png) | _state-feature-testing_ | `#59a901` | "
-![state-integration-testing](img-labels/state-integration-testing.png) | _state-integration-testing_ | `#009800` | "
+![state-analysis](img/labels/state-analysis.png) | _state-analysis_ | `#dd7404` | See state description above
+![state-ready](img/labels/state-ready.png) | _state-ready_ | `#ec9f04` | "
+![state-test-failing](img/labels/state-test-failing.png) | _state-test-failing_ | `#f5ba04` | "
+![state-in-development](img/labels/state-in-development.png) | _state-in-development_ | `#fbca04` | "
+![state-code-review](img/labels/state-code-review.png) | _state-code-review_ | `#b3bb02` | "
+![state-feature-testing](img/labels/state-feature-testing.png) | _state-feature-testing_ | `#59a901` | "
+![state-integration-testing](img/labels/state-integration-testing.png) | _state-integration-testing_ | `#009800` | "
 
 **Priority labels**
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 | Label | Color | Description
 ---|---|---|---
-![priority-high](img-labels/priority-high.png) | _priority-high_ | `#0aff2f` | High priority
-![priority-med](img-labels/priority-med.png) | _priority-med_ | `#85ff97` | Normal priority
-![priority-low](img-labels/priority-low.png) | _priority-low_ | `#adffba` | Low priority
+![priority-high](img/labels/priority-high.png) | _priority-high_ | `#0aff2f` | High priority
+![priority-med](img/labels/priority-med.png) | _priority-med_ | `#85ff97` | Normal priority
+![priority-low](img/labels/priority-low.png) | _priority-low_ | `#adffba` | Low priority
 
 **Type labels (optional)**
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 | Label | Color | Description
 ---|---|---|---
-![type-bug](img-labels/type-bug.png) | _type-bug_ | `#b60205` | Bug / Error
-![type-enhancement](img-labels/type-enhancement.png) | _type-enhancement_ | `#5b2a68` | Enhancement / Feature request
-![type-documentation](img-labels/type-documentation.png) | _type-documentation_ | `#2740a1` | Project documentation (`README.md`/Wiki/Javadoc/...)
+![type-bug](img/labels/type-bug.png) | _type-bug_ | `#b60205` | Bug / Error
+![type-enhancement](img/labels/type-enhancement.png) | _type-enhancement_ | `#5b2a68` | Enhancement / Feature request
+![type-documentation](img/labels/type-documentation.png) | _type-documentation_ | `#2740a1` | Project documentation (`README.md`/Wiki/Javadoc/...)
 
 **Flag labels**
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 | Label | Color | Description
 ---|---|---|---
-![flag-trash](img-labels/flag-trash.png) | _flag-trash_ | `#006b75` | An issue that is deleted but not _Done_ (since you cannot delete an issue in GitHub Issues)
-![flag-invalid](img-labels/flag-invalid.png) | _flag-invalid_ | `#006b75` | Issue that has doesn't conform to the contribution guidelines (`ISSUE_TEMPLATE.md`) or spam
-![flag-duplicate](img-labels/flag-duplicate.png) | _flag-duplicate_ | `#006b75` | Issue that already exists
-![flag-wontfix](img-labels/flag-wontfix.png) | _flag-wontfix_ | `#006b75` | Issue that won't be implemented
-![flag-requirement](img-labels/flag-requirement.png) | _flag-requirement_ | `#006b75` | Formal requirement
-![flag-help-wanted](img-labels/flag-help-wanted.png) | _flag-help-wanted_ | `#006b75` | "Can someone help me?"
-![flag-device-specific](img-labels/flag-device-specific.png) | _flag-device-specific_ | `#006b75` | Issue that only occurs on some devices
+![flag-trash](img/labels/flag-trash.png) | _flag-trash_ | `#006b75` | An issue that is deleted but not _Done_ (since you cannot delete an issue in GitHub Issues)
+![flag-invalid](img/labels/flag-invalid.png) | _flag-invalid_ | `#006b75` | Issue that has doesn't conform to the contribution guidelines (`ISSUE_TEMPLATE.md`) or spam
+![flag-duplicate](img/labels/flag-duplicate.png) | _flag-duplicate_ | `#006b75` | Issue that already exists
+![flag-wontfix](img/labels/flag-wontfix.png) | _flag-wontfix_ | `#006b75` | Issue that won't be implemented
+![flag-requirement](img/labels/flag-requirement.png) | _flag-requirement_ | `#006b75` | Formal requirement
+![flag-help-wanted](img/labels/flag-help-wanted.png) | _flag-help-wanted_ | `#006b75` | "Can someone help me?"
+![flag-device-specific](img/labels/flag-device-specific.png) | _flag-device-specific_ | `#006b75` | Issue that only occurs on some devices
 
 ## Scheduling the project
 
