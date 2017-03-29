@@ -21,16 +21,30 @@ curl -u $TOKEN:x-oauth-basic --request DELETE https://api.github.com/repos/$REPO
 curl -u $TOKEN:x-oauth-basic --request DELETE https://api.github.com/repos/$REPO_USER/$REPO_NAME/labels/question
 curl -u $TOKEN:x-oauth-basic --request DELETE https://api.github.com/repos/$REPO_USER/$REPO_NAME/labels/wontfix
 
-#create state labels
-curl -u $TOKEN:x-oauth-basic --include --request POST --data '{"name":"Analysis","color":"fbca04"}' "https://api.github.com/repos/$REPO_USER/$REPO_NAME/labels"
-curl -u $TOKEN:x-oauth-basic --include --request POST --data '{"name":"Ready","color":"fbca04"}' "https://api.github.com/repos/$REPO_USER/$REPO_NAME/labels"
-curl -u $TOKEN:x-oauth-basic --include --request POST --data '{"name":"In Development","color":"fbca04"}' "https://api.github.com/repos/$REPO_USER/$REPO_NAME/labels"
-curl -u $TOKEN:x-oauth-basic --include --request POST --data '{"name":"Feature Testing","color":"009800"}' "https://api.github.com/repos/$REPO_USER/$REPO_NAME/labels"
-curl -u $TOKEN:x-oauth-basic --include --request POST --data '{"name":"Integration Testing","color":"009800"}' "https://api.github.com/repos/$REPO_USER/$REPO_NAME/labels"
-curl -u $TOKEN:x-oauth-basic --include --request POST --data '{"name":"Blocked","color":"b60205"}' "https://api.github.com/repos/$REPO_USER/$REPO_NAME/labels"
-curl -u $TOKEN:x-oauth-basic --include --request POST --data '{"name":"Test Failed","color":"b60205"}' "https://api.github.com/repos/$REPO_USER/$REPO_NAME/labels"
+# Create state labels
+curl -u $TOKEN:x-oauth-basic --include --request POST --data '{"name":"state-analysis","color":"dd7404"}' "https://api.github.com/repos/$REPO_USER/$REPO_NAME/labels"
+curl -u $TOKEN:x-oauth-basic --include --request POST --data '{"name":"state-ready","color":"ec9f04"}' "https://api.github.com/repos/$REPO_USER/$REPO_NAME/labels"
+curl -u $TOKEN:x-oauth-basic --include --request POST --data '{"name":"state-test-failing","color":"f5ba04"}' "https://api.github.com/repos/$REPO_USER/$REPO_NAME/labels"
+curl -u $TOKEN:x-oauth-basic --include --request POST --data '{"name":"state-in-development","color":"fbca04"}' "https://api.github.com/repos/$REPO_USER/$REPO_NAME/labels"
+curl -u $TOKEN:x-oauth-basic --include --request POST --data '{"name":"state-code-review","color":"b3bb02"}' "https://api.github.com/repos/$REPO_USER/$REPO_NAME/labels"
+curl -u $TOKEN:x-oauth-basic --include --request POST --data '{"name":"state-feature-testing","color":"59a901"}' "https://api.github.com/repos/$REPO_USER/$REPO_NAME/labels"
+curl -u $TOKEN:x-oauth-basic --include --request POST --data '{"name":"state-integration-testing","color":"009800"}' "https://api.github.com/repos/$REPO_USER/$REPO_NAME/labels"
 
-#create helper labels
-curl -u $TOKEN:x-oauth-basic --include --request POST --data '{"name":"Bug","color":"d93f0b"}' "https://api.github.com/repos/$REPO_USER/$REPO_NAME/labels"
-curl -u $TOKEN:x-oauth-basic --include --request POST --data '{"name":"Trash","color":"000000"}' "https://api.github.com/repos/$REPO_USER/$REPO_NAME/labels"
-curl -u $TOKEN:x-oauth-basic --include --request POST --data '{"name":"Requirement","color":"c5def5"}' "https://api.github.com/repos/$REPO_USER/$REPO_NAME/labels"
+# Create priority labels
+curl -u $TOKEN:x-oauth-basic --include --request POST --data '{"name":"priority-high","color":"0AFF2F"}' "https://api.github.com/repos/$REPO_USER/$REPO_NAME/labels"
+curl -u $TOKEN:x-oauth-basic --include --request POST --data '{"name":"priority-med","color":"85FF97"}' "https://api.github.com/repos/$REPO_USER/$REPO_NAME/labels"
+curl -u $TOKEN:x-oauth-basic --include --request POST --data '{"name":"priority-low","color":"ADFFBA"}' "https://api.github.com/repos/$REPO_USER/$REPO_NAME/labels"
+
+# Create type labels
+curl -u $TOKEN:x-oauth-basic --include --request POST --data '{"name":"type-bug","color":"b60205"}' "https://api.github.com/repos/$REPO_USER/$REPO_NAME/labels"
+curl -u $TOKEN:x-oauth-basic --include --request POST --data '{"name":"type-documentation","color":"2740a1"}' "https://api.github.com/repos/$REPO_USER/$REPO_NAME/labels"
+curl -u $TOKEN:x-oauth-basic --include --request POST --data '{"name":"type-enhancement","color":"5b2a68"}' "https://api.github.com/repos/$REPO_USER/$REPO_NAME/labels"
+
+# Create flag labels
+curl -u $TOKEN:x-oauth-basic --include --request POST --data '{"name":"flag-requirement","color":"006b75"}' "https://api.github.com/repos/$REPO_USER/$REPO_NAME/labels"
+curl -u $TOKEN:x-oauth-basic --include --request POST --data '{"name":"flag-device-specific","color":"006b75"}' "https://api.github.com/repos/$REPO_USER/$REPO_NAME/labels"
+curl -u $TOKEN:x-oauth-basic --include --request POST --data '{"name":"flag-duplicate","color":"006b75"}' "https://api.github.com/repos/$REPO_USER/$REPO_NAME/labels"
+curl -u $TOKEN:x-oauth-basic --include --request POST --data '{"name":"flag-help-wanted","color":"006b75"}' "https://api.github.com/repos/$REPO_USER/$REPO_NAME/labels"
+curl -u $TOKEN:x-oauth-basic --include --request POST --data '{"name":"flag-invalid","color":"006b75"}' "https://api.github.com/repos/$REPO_USER/$REPO_NAME/labels"
+curl -u $TOKEN:x-oauth-basic --include --request POST --data '{"name":"flag-trash","color":"006b75"}' "https://api.github.com/repos/$REPO_USER/$REPO_NAME/labels"
+curl -u $TOKEN:x-oauth-basic --include --request POST --data '{"name":"flag-wontfix","color":"006b75"}' "https://api.github.com/repos/$REPO_USER/$REPO_NAME/labels"
