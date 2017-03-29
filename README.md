@@ -1,4 +1,4 @@
-# GitHub Task Management
+﻿# GitHub Task Management
 
 This document defines the guidelines we follow for task management using GitHub Issues.  It is intentionally lean and covers primarily how individual releases are managed.
 
@@ -35,7 +35,7 @@ Items in the integration testing state have passed all unit tests in the develop
 #### Failed Tests
 When a test fails, in addition to moving the item back to _In Development_, the tester should apply the _Test Failing_ label and re-assign the issue to the original developer.  This will aid in tracking priorities and help developers identify what needs their immediate attention.
 
-![Issue Management Process](flowcharts/software-development-process.png)
+![Issue Management Process](img/flowcharts/software-development-process.svg)
 
 ## Labels
 
