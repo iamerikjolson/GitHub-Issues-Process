@@ -13,16 +13,16 @@ assigned to a milestone. That rule applies regardless of any labels assigned it.
 
 Any issue with a ![](img-labels/trash.png) label is automatically excluded from the below states.
 
-State | Label | In a Milestone? | Open State | % Complete | Description
----|---|---|---|---|---
-Backlog | n/a | No | Open | 0% | Issues have been identified but are not yet ready for development.
-In Analysis | ![](img-labels/in-analysis.png) |Yes | Open | 10% | Issues are actively being analyzed, typically by a Business Analyst or Lead Developer, to ensure the work is Ready for development.
-Ready | ![](img-labels/ready.png) | Yes | Open  | 20% | Issues have been fleshed out to the point where they are believed to be ready to be acted upon by developers working on the associated milestone.
-In Progress | ![](img-labels/in-progress.png) | Yes | Open | 30% | Issues are actively being worked on by a developer or another person (if not a coding task).  With the exception of items that are blocked or returned to development due to failed tests, each developer should strive to have as few items in this state as possible.
-In Review | ![](img-labels/in-review.png) | Yes | Open | 70% | The developer believes he/she is complete and has submitted the issue for peer review.
-Feature Testing | ![](img-labels/feature-testing.png) | Yes | Open | 80% | Issues are code complete and can be acted on by testers.  All code is assumed to be checked in and deployed to the appropriate environments for testing.
-Integration Testing | ![](img-labels/integration-testing.png) | Yes | Open | 90% | Issues have been unit tested and are ready for closure pending end of sprint integration testing.
-Done | n/a | n/a | Closed | 100% | Issues have passed testing and are closed.
+State | Label | Open? | % | Description
+---|---|---|---|---
+Backlog | n/a | Open | 0% | Issues have been identified but are not yet ready for development. Backlogged issues are typically not in a milestone.
+In Analysis | ![](img-labels/in-analysis.png) | Open | 10% | Issues are actively being analyzed, typically by a Business Analyst or Lead Developer, to ensure the work is Ready for development.
+Ready | ![](img-labels/ready.png) | Open  | 20% | Issues have been fleshed out to the point where they are believed to be ready to be acted upon by developers working on the associated milestone.
+In Progress | ![](img-labels/in-progress.png) | Open | 30% | Issues are actively being worked on by a developer or another person (if not a coding task).  With the exception of items that are blocked or returned to development due to failed tests, each developer should strive to have as few items in this state as possible.
+In Review | ![](img-labels/in-review.png) | Open | 70% | The developer believes he/she is complete and has submitted the issue for peer review.
+Feature Testing | ![](img-labels/feature-testing.png) | Open | 80% | Issues are code complete and can be acted on by testers.  All code is assumed to be checked in and deployed to the appropriate environments for testing.
+Integration Testing | ![](img-labels/integration-testing.png) | Open | 90% | Issues have been unit tested and are ready for closure pending end of sprint integration testing.
+Done | n/a | Closed | 100% | Issues have passed testing and are closed.
 
 ## Helper Labels
 The following labels are not states, per se, but help to communicate information about the issue.
