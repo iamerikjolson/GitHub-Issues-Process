@@ -1,5 +1,5 @@
 echo ''
-echo 'This script will remove the GitHub default labels and create the 80|20 process labels for your repo. A personal access token is required to access private repos.'
+echo 'This script will remove the GitHub default labels and create the Array Digital process labels for your repo. A personal access token is required to access private repos.'
 
 echo ''
 echo -n 'GitHub Personal Access Token: '
