@@ -35,7 +35,6 @@ Label | Description
 ![](img-labels/help-wanted.png) | The person assigned is requesting assistance on the task
 ![](img-labels/requirement.png) | The issue is a formal/written requirement
 ![](img-labels/test-failed.png) | The issue was Feature Tested, but was set to failed by the person testing it
-![](img-labels/track-time.png) | The person working on this issue must track how much time is spent on the issue
 
 
 # To Use This Process
