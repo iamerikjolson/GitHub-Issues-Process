@@ -31,7 +31,8 @@ curl -u $TOKEN:x-oauth-basic --include --request POST --data '{"name":"Feature T
 curl -u $TOKEN:x-oauth-basic --include --request POST --data '{"name":"Integration Testing","color":"0e8a16"}' "https://api.github.com/repos/$REPO_USER/$REPO_NAME/labels"
 
 #create helper labels
-curl -u $TOKEN:x-oauth-basic --include --request POST --data '{"name":"Bug","color":"d93f0b"}' "https://api.github.com/repos/$REPO_USER/$REPO_NAME/labels"
+curl -u $TOKEN:x-oauth-basic --include --request POST --data '{"name":"Bug: Dev","color":"d93f0b"}' "https://api.github.com/repos/$REPO_USER/$REPO_NAME/labels"
+curl -u $TOKEN:x-oauth-basic --include --request POST --data '{"name":"Bug: Prod","color":"d93f0b"}' "https://api.github.com/repos/$REPO_USER/$REPO_NAME/labels"
 curl -u $TOKEN:x-oauth-basic --include --request POST --data '{"name":"Blocked","color":"b60205"}' "https://api.github.com/repos/$REPO_USER/$REPO_NAME/labels"
 curl -u $TOKEN:x-oauth-basic --include --request POST --data '{"name":"Test Failed","color":"b60205"}' "https://api.github.com/repos/$REPO_USER/$REPO_NAME/labels"
 curl -u $TOKEN:x-oauth-basic --include --request POST --data '{"name":"Track Time","color":"5319e7"}' "https://api.github.com/repos/$REPO_USER/$REPO_NAME/labels"
