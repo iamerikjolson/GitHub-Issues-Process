@@ -12,6 +12,12 @@ read REPO
 REPO_USER=$(echo "$REPO" | cut -f1 -d /)
 REPO_NAME=$(echo "$REPO" | cut -f2 -d /)
 
+# As of 24/01/2020 the token method suggested is 
+# For Deletion
+# curl -H "Authorization: token $TOKEN" --request DELETE https://api.github.com/repos/$REPO_USER/$REPO_NAME/labels/bug
+# For Creation
+# curl -H "Authorization: token $TOKEN" --include --request POST --data '{"name":"In Analysis","color":"fbca04"}' "https://api.github.com/repos/$REPO_USER/$REPO_NAME/labels"
+
 # Delete default labels
 curl -u $TOKEN:x-oauth-basic --request DELETE https://api.github.com/repos/$REPO_USER/$REPO_NAME/labels/bug
 curl -u $TOKEN:x-oauth-basic --request DELETE https://api.github.com/repos/$REPO_USER/$REPO_NAME/labels/duplicate
